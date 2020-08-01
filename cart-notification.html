@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CartNotificationHtml</title>
+	<link rel="stylesheet" type="text/css" href="style\style.css">
+	<script type="text/javascript" src="js\script.js"></script>
+	
+	
+</head>
+<body>
+	<div id="header">
+		<header>
+			<label id="tru">truYum</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="images\truyum-logo-light.png" height="50px" width="50px">
+
+			
+			<a class="menu" href="cart.html">Cart</a>
+			<a class="menu" href ="menu-item-list-customer.html"> Menu</a>
+
+		</header>
+		<article>
+			<h1>Cart</h1>
+			<div id="cart" style="height: 340px; width: 100%;">
+			<p style="color:#0be687;font-weight: bold; margin-left: 35%;">Item removed from Cart successfully!</p>
+			<table id="info">
+				<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Free Delivery</th>
+					<th>Price</th>
+					
+				</tr>
+				<tr>
+					<td>Sandwich</td>
+					<td>Yes</td>
+					<td class="tmaount">Rs. 99.00</td>
+					
+					<td><a class="atc" href="#" onclick="deleteRow()">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Burger</td>
+					<td>No</td>
+					<td class="tmaount">Rs. 129.00</td>
+					
+					<td><a class="atc" href="#" onclick="return deleteRow()">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Pizza</td>
+					<td>No</td>
+					<td class="tmaount">Rs. 149.00</td>
+					
+					<td><a class="atc" href="#" onclick="return deleteRow()">Delete</a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td style="color: black;"><a href="#" onclick="calTotal()"><b>Total</b></td>
+					<td id="total"></td>
+				</tr>
+				</tbody>
+
+			</table>
+			
+			</div>
+		</article>
+		<footer>
+			<br/><br/>
+			<div class="fcontent">Copyright &copy; 2019</div>
+			<br/><br/><br/><br/>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Item List Customer</title>
+	<link rel="stylesheet" type="text/css" href="style\style.css">
+	
+</head>
+<body>
+	<div id="header">
+		<header>
+			<label id="tru">truYum</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="images\truyum-logo-light.png" height="50px" width="50px">
+
+			
+			<a class="menu" href="cart.html">Cart</a>
+			<a class="menu" href ="menu-item-list-customer.html"> Menu</a>
+
+		</header>
+		<article>
+			<h1>Cart</h1>
+			<div id="cart" style="height: 340px; width: 100%;">
+			<table id="info">
+				<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Free Delivery</th>
+					<th>Price</th>
+					
+				</tr>
+				<tr>
+					<td>Sandwich</td>
+					<td>Yes</td>
+					<td class="tmaount">Rs. 99.00</td>
+					
+					<td><a class="atc" href="cart-notification.html" onclick="deleteRow(this)">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Burger</td>
+					<td>No</td>
+					<td class="tmaount">Rs. 129.00</td>
+						
+					<td><a class="atc" href="#" onclick="deleteRow(this)">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Pizza</td>
+					<td>No</td>
+					<td class="tmaount">Rs. 149.00</td>
+					
+					<td><a class="atc" href="#" onclick="deleteRow(this)">Delete</a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><b>Total</b></td>
+					<td id="total"></td>
+				</tr>
+				</tbody>
+
+			</table>
+			<script>
+				var tt=document.getElementById("info");
+                var sum=0;
+                
+                for(var i=1;i<tt.rows.length-1;i++){
+                	var arr=[];
+                	var s=tt.rows[i].cells[2].innerHTML;
+                	arr=s.split(" ");
+
+                	sum=sum+parseInt(arr[1]);
+	                //console.log(sum);
+	            }
+                console.log(sum);
+                document.getElementById("total").innerHTML="Rs. "+sum+".00";
+
+
+            </script>
+			</div>
+		</article>
+		<footer>
+			<br/><br/>
+			<div class="fcontent">Copyright &copy; 2019</div>
+			<br/><br/><br/><br/>
+		</footer>
+	</div>
+
+</body>
+</html>

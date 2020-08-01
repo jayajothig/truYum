@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EditMenuHtml</title>
+	<link rel="stylesheet" type="text/css" href="style\style.css">
+	<script type="text/javascript" src="js\script.js"></script>
+</head>
+<body>
+	<div id="header">
+		<header>
+			<label id="tru">truYum</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="images\truyum-logo-light.png" height="50px" width="50px">
+
+			
+			
+			<a class="menu" href ="menu-item-list-customer.html"> Menu</a>
+
+
+		</header>
+		<article>
+			<div id="editf" style="height: 15px; width: 100%;"></div>
+			<form name="emenu" id="editform" onsubmit="return formValidate();">
+			<h1>Edit Menu Items</h1>
+		<table class ="edit">
+			
+			<tr>
+				<td> Name</td>
+				
+			</tr>
+			<tr><td><input type="text" size="40px;" name="title" id="food"  required="true"></td>
+			</tr>
+		</table>
+		<table class="edit">
+			<tr>
+				<td>Price (Rs.)</td>
+				<td>Active</td>
+				<td>Date of Launch</td>
+				<td>Category</td>
+				
+			</tr>
+			<tr>
+				<td><input type="number" name="price" id="price" required="true"></td>
+				<td><input type="radio" name="inStock" id="activeyes" value="Yes">Yes
+					<input type="radio" name="inStock" id="activeno" value="No">No</td>
+				<td><input type="date" name="dateOfLaunch" id="dateOfLaunch" required="true"></td>
+				<td><select name = "category">
+					<option value="Main Course">Main course</option>
+					<option value="Starters">Starters</option>
+					<option value="Dessert"> Dessert</option>
+					<option value="Drinks">Drinks</option>
+				</select></td>
+				
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox" name="Free Delivery" value="yes"> Free Delivery</td>
+				
+			</tr>
+			s
+			<tr><td style="width:5%;  ">
+				<input type="submit" name="submit" id="submit" value ="Save"style="color:white; background-color:#4c5fd9; ">  </td>
+			</tr>
+			
+		</table><br/><br/><br/><br/>
+	</div>
+</form>
+		</article>
+		<footer>
+			<br/><br/>
+			<div class="fcontent">Copyright &copy; 2019</div>
+			<br/><br/><br/><br/>
+		</footer>
+	</div>
+
+</body>
+</html>
